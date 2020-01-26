@@ -1,7 +1,7 @@
 <template>
     <footer>
         <p>
-           text text text 
+           Flocktory08560 6687
         </p>
         
     </footer>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'footer'
+    name: 'footerComponent'
 }
 </script>
 

@@ -1,22 +1,25 @@
 <template>
   <div class="home">
-    <Header></Header>
-    <Nav></Nav>
-    <Footer></Footer>
+    <HeaderComponent></HeaderComponent>
+    <MenuComponent></MenuComponent>
+    <NavComponent></NavComponent>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-import Header from '@/components/header'
-import Nav from '@/components/nav'
-import Footer from '@/components/footer'
+import HeaderComponent from '@/components/headerComponent'
+import NavComponent  from '@/components/navComponent'
+import FooterComponent  from '@/components/footerComponent'
+import MenuComponent  from '@/components/menuComponent'
 
 export default {
   name: 'home',
   components: {
-    Header,
-    Nav,
-    Footer,
+    HeaderComponent,
+    NavComponent,
+    FooterComponent,
+    MenuComponent,
   }
 }
 </script>

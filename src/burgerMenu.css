@@ -1,0 +1,134 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #333;
+}
+
+.cross-burger{
+	width: 60px;
+	height: 60px;
+	/*background-color: lightgrey;*/
+	margin: 15px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+.line-block{
+	width: 75%;
+	height: 6px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+.line-block-new-pos{
+	margin-top: 24px !important;
+	transform: rotate(45deg) !important;
+}
+.line-block-new-pos-2{
+	margin-top: -22px !important;
+	transform: rotate(-45deg) !important;
+}
+
+
+.circle-burger{
+	width: 60px;
+	height: 60px;
+	/*background-color: lightgrey;*/
+	margin: 15px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+.line-circle{
+	width: 75%;
+	height: 4px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+	border: 1px solid white;
+}
+.circle-new{
+	width: 25px !important;
+	height: 35px !important;
+	margin: 0 auto;
+	border: 5px solid white;
+	border-radius: 50px !important;
+	background-color: transparent !important;
+}
+
+.arrow-burger{
+	width: 60px;
+	height: 60px;
+	/*background-color: lightgrey;*/
+	margin: 15px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;		
+}
+.line-arrow{
+	width: 75%;
+	height: 4px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+	border: 1px solid white;
+}
+.arrow-block{
+	right: 10px;
+	top: 20px;
+	transform: rotate(30deg);
+	width: 30px !important;
+	margin: 18px -20px -8px 0px;
+}
+.arrow-block-2{
+	right: 10px;
+	bottom: 20px;
+	transform: rotate(-30deg);
+	width: 30px !important;
+	margin: 0px -18px 0px 2px;
+}
+
+.twist-burger{
+	width: 60px;
+	height: 60px;
+	/*background-color: lightgrey;*/
+	margin: 15px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.line-twist{
+	width: 75%;
+	height: 6px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+}
+
+.animate-circle-burger{
+	width: 60px;
+	height: 60px;
+	/*background-color: lightgrey;*/
+	margin: 15px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+.line-round{
+	width: 75%;
+	height: 6px;
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 10px;
+	transition: 0.5s;
+}

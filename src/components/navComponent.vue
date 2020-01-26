@@ -37,11 +37,11 @@
 
 <script>
 export default {
-    name: 'nav'
+    name: 'navComponent'
 }
 </script>
 
-<style lang="sass">
+<style scoped lang="sass">
     nav 
         display: flex
         width: 100%
