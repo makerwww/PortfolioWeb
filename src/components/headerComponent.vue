@@ -18,37 +18,35 @@ export default {
     data() {
         return {
             burgerState: false,
-            line: document.querySelectorAll('.line-block'), 
         }
     },
     methods: {
-        burgerClick(event){
-            if(!event.currentTarget.classList.contains('active')){
-                this.showMenu(event);  
+        burgerClick(e){
+            let line = document.querySelectorAll('.line-block') 
+            let crossBurg = e.currentTarget;
+
+            if(!crossBurg.classList.contains('active')){
+                crossBurg.classList.add('active');
+                this.burgerState = !this.burgerState;
+                eventEmitter.$emit('burgerChanged', this.burgerState)
+                line[1].style.width = '0px';
+                setTimeout(() => {
+                    line[0].classList.add('line-block-new-pos');
+                    line[2].classList.add('line-block-new-pos-2');
+                },100)
+                
             } else {
-                this.hideMenu(event);
+                line[0].classList.remove('line-block-new-pos') 
+                line[2].classList.remove('line-block-new-pos-2') 
+                setTimeout(function(){
+                    line[1].style.width = '75%' 
+                },100) 	
+                crossBurg.classList.remove('active');
+                this.burgerState = !this.burgerState;
+                eventEmitter.$emit('burgerChanged', this.burgerState);
             }
         },
-        hideMenu(e){
-            this.line[0].classList.remove('line-block-new-pos') 
-            this.line[2].classList.remove('line-block-new-pos-2') 
-            setTimeout(function(){
-                this.line[1].style.width = '75%' 
-            },100) 	
-            e.currentTarget.classList.remove('active');
-            this.burgerState = !this.burgerState;
-            eventEmitter.$emit('burgerChanged', this.burgerState);
-        },
-        showMenu(e) {
-            e.currentTarget.classList.add('active');
-            this.burgerState = !this.burgerState;
-            eventEmitter.$emit('burgerChanged', this.burgerState)
-            this.line[1].style.width = '0px';
-            setTimeout(() => {
-                this.line[0].classList.add('line-block-new-pos');
-                this.line[2].classList.add('line-block-new-pos-2');
-            },100)
-        }
+        
     },
     computed: {
         
