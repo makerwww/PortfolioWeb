@@ -11,5 +11,6 @@
   font-family: 'Roboto Slab', serif
 #app 
   background-color: #FFF
+  min-height: 100%
 
 </style>

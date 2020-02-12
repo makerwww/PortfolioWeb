@@ -18,6 +18,7 @@ export default {
     data() {
         return {
             burgerState: false,
+            
         }
     },
     methods: {
@@ -46,6 +47,10 @@ export default {
                 eventEmitter.$emit('burgerChanged', this.burgerState);
             }
         },
+        hideMenu() {
+            this.burgerState = false;
+            eventEmitter.$emit('burgerChanged', this.burgerState);
+        }
         
     },
     computed: {

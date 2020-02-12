@@ -1,0 +1,14 @@
+{
+    "vibermed": {
+        "url": "www.vibermed.ru",
+        "name": "Медицинский центр Вайбер",
+        "description": "",
+        "img": ["@/assets/viber1.png", "@/assets/viber2.png"]
+    },
+    "masshtab": {
+        "url": "www.mas-servis.ru",
+        "name": "Масштаб Сервис",
+        "description": "",
+        "img": []
+    }
+}

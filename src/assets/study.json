@@ -1,0 +1,71 @@
+{
+    "mercedes": {
+        "name": "Первый проект",
+        "description": "",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "Landing": {
+        "name": "Landing Page",
+        "description": "",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "LeraServ": {
+        "name": "Проект для института",
+        "description": "",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "Kontent Line": {
+        "name": "Поисковая строка",
+        "description": "",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "Chat": {
+        "name": "Интерфейс для чата",
+        "description": "",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "Santa": {
+        "name": "Верстка санты",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    },
+    "Shop project": {
+        "name": "Интернет магазин на vue",
+        "gitUrl": "",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": ""
+    }
+
+}
