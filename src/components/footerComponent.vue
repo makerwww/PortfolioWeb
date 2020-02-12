@@ -1,9 +1,8 @@
 <template>
     <footer>
         <p>
-           Flocktory08560 6687
+           &copy;Васильев Игорь Дмитриевич 2020
         </p>
-        
     </footer>
 </template>
 
@@ -20,6 +19,8 @@ export default {
         height: 30px
         color: #000
         position: relative
+        bottom: 0
+        left: 0
         justify-content: center
         p 
             display: flex

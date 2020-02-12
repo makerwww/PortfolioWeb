@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>Портфолио работ</h1>
+        <h1>{{head}}</h1>
         <div @click="burgerClick" class="cross-burger">
 			<div class="line-block"></div>
 			<div class="line-block"></div>
@@ -14,37 +14,41 @@ import { eventEmitter } from '../main';
 
 export default {
     name: 'headerComponent',
+    props: ['head'],
     data() {
         return {
             burgerState: false,
+            line: document.querySelectorAll('.line-block'), 
         }
     },
     methods: {
-        burgerClick(e){
-            let line = document.querySelectorAll('.line-block') 
-            let crossBurg = e.currentTarget;
-
-            if(!crossBurg.classList.contains('active')){
-                crossBurg.classList.add('active');
-                this.burgerState = !this.burgerState;
-                eventEmitter.$emit('burgerChanged', this.burgerState)
-                line[1].style.width = '0px';
-                setTimeout(() => {
-                    line[0].classList.add('line-block-new-pos');
-                    line[2].classList.add('line-block-new-pos-2');
-                },100)
-                
+        burgerClick(event){
+            if(!event.currentTarget.classList.contains('active')){
+                this.showMenu(event);  
             } else {
-                line[0].classList.remove('line-block-new-pos') 
-                line[2].classList.remove('line-block-new-pos-2') 
-                setTimeout(function(){
-                    line[1].style.width = '75%' 
-                },100) 	
-                crossBurg.classList.remove('active');
-                this.burgerState = !this.burgerState;
-                eventEmitter.$emit('burgerChanged', this.burgerState);
+                this.hideMenu(event);
             }
         },
+        hideMenu(e){
+            this.line[0].classList.remove('line-block-new-pos') 
+            this.line[2].classList.remove('line-block-new-pos-2') 
+            setTimeout(function(){
+                this.line[1].style.width = '75%' 
+            },100) 	
+            e.currentTarget.classList.remove('active');
+            this.burgerState = !this.burgerState;
+            eventEmitter.$emit('burgerChanged', this.burgerState);
+        },
+        showMenu(e) {
+            e.currentTarget.classList.add('active');
+            this.burgerState = !this.burgerState;
+            eventEmitter.$emit('burgerChanged', this.burgerState)
+            this.line[1].style.width = '0px';
+            setTimeout(() => {
+                this.line[0].classList.add('line-block-new-pos');
+                this.line[2].classList.add('line-block-new-pos-2');
+            },100)
+        }
     },
     computed: {
         

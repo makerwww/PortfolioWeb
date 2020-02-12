@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HeaderComponent></HeaderComponent>
+    <HeaderComponent head="Портфолио работ"></HeaderComponent>
     <MenuComponent></MenuComponent>
     <NavComponent></NavComponent>
     <FooterComponent></FooterComponent>
@@ -20,6 +20,11 @@ export default {
     NavComponent,
     FooterComponent,
     MenuComponent,
-  }
+  }, 
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>
